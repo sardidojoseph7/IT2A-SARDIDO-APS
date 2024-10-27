@@ -10,6 +10,7 @@ public class SardidoAPS {
         Scanner sc = new Scanner(System.in);
         HR hr = new HR();
         Attendance att = new Attendance();
+        Payslip pays = new Payslip();
         int chose;
         
     do{ 
@@ -27,11 +28,11 @@ public class SardidoAPS {
                 break;
             
             case 2:
-                att.Attendance();
+                att.EAttendance();
                 break;
 
             case 3:
-                
+                pays.Payslip();
                 break;
                 
             case 4:
@@ -44,7 +45,7 @@ public class SardidoAPS {
         chose = sc.nextInt();
         
 }while(chose != 0);
-        System.out.println("Thank You for using the TLS system 8)!");   
+        System.out.println("Thank You for using Payslip Generation System!)!");   
     }
     
 }
